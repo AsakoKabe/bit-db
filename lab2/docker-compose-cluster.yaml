@@ -1,0 +1,25 @@
+version: '3.7'
+
+services:
+  redis1:
+    image: redis
+    command: ["redis-server", "--port", "6379", "--timeout", "300"]
+    ports:
+      - "6379:6379"
+    networks:
+      - redisnet
+
+  redis2:
+    image: redis
+    command: ["redis-server", "--port", "6380", "--slaveof", "redis1", "6379", "--timeout", "300"]
+    networks:
+      - redisnet
+
+  redis3:
+    image: redis
+    command: ["redis-server", "--port", "6381", "--slaveof", "redis1", "6379", "--timeout", "300"]
+    networks:
+      - redisnet
+
+networks:
+  redisnet:
