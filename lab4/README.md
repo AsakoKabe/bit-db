@@ -263,10 +263,15 @@ https://docs.dolphindb.com/en/index.html
 Следить за источниками и соц сетями
 
 https://dolphindb.com/news
+
 https://github.com/dolphindb
+
 https://twitter.com/DolphinDB_Inc
+
 https://stackoverflow.com/questions/tagged/dolphindb
+
 https://dolphindb.slack.com/unsupported-geo
+
 https://www.youtube.com/@dolphindb8736
 
 
